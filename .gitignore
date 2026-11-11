@@ -1,6 +1,9 @@
 # Local database
 ydbdatabase
 
+# Local share volume
+shared
+
 # Cached python files
 __pycache__/
 *.py[cod]
