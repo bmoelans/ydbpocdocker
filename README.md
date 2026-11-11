@@ -14,7 +14,10 @@ docker run --rm -it ydbpocdocker-ydbdocker bash
 Now you can play with Mumps, e.g.:
 
 ```
+ydb
+
 YDB>s msg="Hello World"
 YDB>w msg
 Hello World
+YDB>h
 ```

@@ -6,3 +6,6 @@ LABEL maintainer="Bart Moelans <bart.moelans@uantwerpen.be>"
 ##################################
 ENV ydb_chset=M \
     ydb_lvnullsubs=0
+
+# by default yottadb entrypoint is ydb itself
+ENTRYPOINT []
