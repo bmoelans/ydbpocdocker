@@ -1,3 +1,7 @@
+# Local database
+ydbdatabase
+
+# Cached python files
 __pycache__/
 *.py[cod]
 *$py.class

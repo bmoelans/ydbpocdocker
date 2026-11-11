@@ -9,7 +9,7 @@ This project is intended to explore the connection between a YottaDB database an
 Build docker and run
 ```
 docker compose build
-docker run --rm -it ydbpocdocker-ydbdocker bash
+docker compose run --rm ydbdocker bash
 ```
 Now you can play with Mumps, e.g.:
 
