@@ -1,0 +1,5 @@
+services:
+  ydbdocker:
+    build:
+      context: .
+    container_name: ydbdocker
