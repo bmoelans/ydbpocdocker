@@ -21,3 +21,13 @@ YDB>w msg
 Hello World
 YDB>h
 ```
+
+## Import data
+
+Download a zwr-file and place it in the shared folder. In this example we have `BCAT__stcv_.zwr` containing data in a global `^BCAT`
+
+```
+docker compose run --rm ydbdocker bash
+cd /shared
+mupip load BCAT__stcv_.zwr
+```
