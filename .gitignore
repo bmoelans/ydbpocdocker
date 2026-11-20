@@ -1,5 +1,7 @@
 # Local database
-ydbdatabase
+/ydbdatabase/*
+!/ydbdatabase/r
+
 
 # Local share volume
 shared

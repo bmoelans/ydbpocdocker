@@ -31,3 +31,28 @@ docker compose run --rm ydbdocker bash
 cd /shared
 mupip load BCAT__stcv_.zwr
 ```
+
+
+## Run a simple script
+Put it in /ydbdatabase/r and then do e.g:
+```
+docker compose run --rm ydbdocker ydb -run %World^zhello
+```
+or in interactive mode
+```
+docker compose run --rm ydbdocker ydb
+YDB>d %World^zhello
+YDB>h
+```
+
+Example of JSON export:
+```
+docker compose run --rm ydbdocker ydb -run %JsonEx^zhello
+```
+
+Example of export titles of c:stcv:3101797 to JSON:
+```
+YDB>d ^%JSWRITE("^BCAT(""stcv"",3101797,""ti"")","*","noglvname")
+{"stcv":{"3101797":{"ti":{"1":"h^dut^1^0^oip^Aen-leydinge tot de salige vreese Godts^^doc"}}}}
+{"stcv":{"3101797":{"ti":{"2":"tc^dut^1^0^oip^Aen-leydinghe tot de salighe vreese Godts^^ext"}}}}
+```
