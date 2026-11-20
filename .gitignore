@@ -4,7 +4,8 @@
 
 
 # Local share volume
-shared
+/shared/*
+!/shared/pythonExamples
 
 # Cached python files
 __pycache__/

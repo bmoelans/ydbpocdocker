@@ -10,5 +10,20 @@ ENV ydb_chset=M \
 
 RUN echo "source ${ydb_dist}/ydb_env_set" >> /root/.bashrc
 
+
+######################
+# Install extra apps #
+######################
+RUN apt-get -y update \
+	&& apt-get -y install vim python3-pip gcc libffi-dev
+
+
+###########################
+# Install python packages #
+###########################
+
+RUN pip install --break-system-packages yottadb
+
+
 # by default yottadb entrypoint is ydb itself
 ENTRYPOINT []
