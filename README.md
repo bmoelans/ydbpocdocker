@@ -56,3 +56,18 @@ YDB>d ^%JSWRITE("^BCAT(""stcv"",3101797,""ti"")","*","noglvname")
 {"stcv":{"3101797":{"ti":{"1":"h^dut^1^0^oip^Aen-leydinge tot de salige vreese Godts^^doc"}}}}
 {"stcv":{"3101797":{"ti":{"2":"tc^dut^1^0^oip^Aen-leydinghe tot de salighe vreese Godts^^ext"}}}}
 ```
+
+
+## Run a Python script
+
+You can run an example python script, based on https://docs.yottadb.com/ApplicationsManual/ydbpython.html#access-yottadb-from-the-command-line, as follows
+
+```
+docker compose run --rm ydbdocker bash
+
+python3 /shared/pythonExamples/ex1.py 
+# python3 /shared/pythonExamples/ex1.py 
+500|g|6.5
+500|g|3.5
+500|g|2.5
+```
